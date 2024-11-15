@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-page</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" /> 
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#" class="titlelogo">Quizz Master</a>
+            </div>
+            <div class="bars">
+                <a href="#" class="nav_link">Home</a>
+                <a href="Contact.html" class="nav_link">Contact</a>
+                <button class="button" id="form-open">Login</button>
+            </div>
+        </div>
+    </header> 
+  
+    <!-- Home -->
+    <section class="home">
+        <div class="data"><p>“Quizizz motivates students to increases confidence, and can help to establish a culture of learning and growing from mistakes.”</p></div>
+        <div class="form_Container">
+            <i class="uil uil-times form_Close"></i>
+            <!-- Login Form -->
+            <div class="form login_form">
+                <form action="home.html" method="get">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="option_filed">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check /">
+                            <label form="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+
+                    <button class="button">Login Now</button>
+
+                    <div class="loin_signup">Don't have an account? <a href="#" id="signup">Signin</a></div>
+                </form>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="form signup_form">
+                <form action="home.html" method="get">
+                    <h2>Signin</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required/>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create your password" required/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <button class="button">Create Account</button>
+
+                    <div class="login_signup">Have an account already? <a href="#" id="login">Login</a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <div class="title">Quizz Master</div>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div> | </div>
+            <div class="footer-third fdata">
+                <ul>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+            <div> | </div>
+            <div class="footer-fourth fdata">
+                <ul>
+                    <li><a href="index.html">Bookmarks</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-solid fa-copyright"></i>2023; Designed by KASAM PRIYA DARSHINI</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

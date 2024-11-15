@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="ap.css">
+</head>
+<body>
+    <div class="Navbar">
+        <div class="title"><a href="#" class="nav_logo">Quizz Master</a></div>
+        <div class="data">
+            <a href="home.html" class="nav_link">Exit</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="quiz-container">
+            <h1>Aptitude</h1>
+            <div id="question-container">
+                <p id="question-text">Question 1:</p>
+            
+                <label for="answerA"><input type="radio" name="answer" value="A" id="answerA">A</label><br>
+            
+                <label for="answerB"><input type="radio" name="answer" value="B" id="answerB">B</label><br>
+            
+                <label for="answerC"><input type="radio" name="answer" value="C" id="answerC">C</label><br>
+            
+                <label for="answerD"><input type="radio" name="answer" value="D" id="answerD">D</label><br>
+            </div>
+            <button class="prev-button"onclick="audio1.play();">Previous</button>
+            <button id="next-button"onclick="audio.play();">Next</button>
+            <button id="startButton"onclick="audio2.play();">Start Listening</button>
+        </div>
+        <div class="result-container">
+            <h2>Your Results</h2>
+            <p id="score">Score: 0</p>
+            <div class="exiting"><a class="exit" href="home.html">EXIT</a></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "mouse-click.mp3";
+        const audio1 = new Audio();
+        audio1.src = "mouse-click.mp3";
+        const audio2 = new Audio();
+        audio2.src = "mouse-click.mp3";
+    </script>
+
+    <script src="ap.js"></script>
+</body>
+</html>
+
